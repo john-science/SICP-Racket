@@ -1,6 +1,6 @@
 # SICP-Racket
 
-Working through the wonderful [SICP Textbook](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html) in [Racket](https://racket-lang.org/) Scheme
+Reading through the wonderful [SICP Textbook](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html) in [Racket](https://racket-lang.org/) Scheme
 
 
 ### [Chapter 1 - Building Abstractions with Procedures](Chapter_1_Abstractions_with_Procedures)
