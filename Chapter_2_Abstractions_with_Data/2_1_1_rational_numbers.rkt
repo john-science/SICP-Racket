@@ -10,10 +10,10 @@
 (define (denom x) (cdr x))
 
 (define (print-rat x)
-  (newline)
   (display (numer x))
   (display "/")
-  (display (denom x)))
+  (display (denom x))
+  (newline))
 
 (define (add-rat x y)
   (make-rat (+ (* (numer x) (denom y))
@@ -50,4 +50,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;   TODO: Do some examples
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define one-third (make-rat 1 3))
+(define one-fourth (make-rat 1 4))
+
+(display "1/3 + 1/4 = ")
+(print-rat (add-rat one-third one-fourth))
+
+(display "1/3 * 1/4 = ")
+(print-rat (mul-rat one-third one-fourth))
+
 
