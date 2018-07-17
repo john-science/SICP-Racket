@@ -26,6 +26,32 @@
 
 
 
+; EXERCISE 2.27
+; reverse a list, and any sub-list inside
+; in effect, do a deep-search version of a list reverse
+(define (deep-reverse list1)
+  (define (reverse_iter list1 list2)
+    (cond ((null? list1) list2)
+          ((not (pair? list1)) list1)
+          (else (reverse_iter (cdr list1) (cons (deep-reverse (car list1)) list2)))
+    )
+  )
+  (reverse_iter list1 '())
+)
+
+
+(display "\n(deep-reverse (list 1 2 3)):  ")
+(display (deep-reverse (list 1 2 3)))
+
+(display "\n(deep-reverse (list (list 1 2) 3)):  ")
+(display (deep-reverse (list (list 1 2) 3)))
+
+(display "\n(deep-reverse (list (list 1 2) 3 (list 6 7 8 9 10))):  ")
+(display (deep-reverse (list (list 1 2) 3 (list 6 7 8 9 10))))
+(newline)
+
+
+; EXERCISE 2.28
 ; flatten a tree into an ordered list of the leaves (left-to-right)
 (define (fringe x)
   (cond
@@ -37,7 +63,6 @@
     )
   )
 )
-
 
 
 (display "\n(fringe (list (list 1 2) 3 4)):  ")
