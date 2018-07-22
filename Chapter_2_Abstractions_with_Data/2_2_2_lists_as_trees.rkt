@@ -51,6 +51,7 @@
 (newline)
 
 
+(display "\nExercise 2.28 - flatten a tree")
 ; EXERCISE 2.28
 ; flatten a tree into an ordered list of the leaves (left-to-right)
 (define (fringe x)
@@ -74,4 +75,30 @@
 (display "\n(fringe (list (list (list 1 2) (list (list 3 5 6 7))))):  ")
 (display (fringe (list (list (list 1 2) (list (list 3 5 6 7))))))
 (newline)
-(newline)
+
+
+; EXERCISE 2.31
+; create a generic deep-tree version of "map"
+(define (tree-map tree fun)
+  (map (lambda (sub-tree)
+         (if (pair? sub-tree) (tree-map sub-tree fun)
+                              (fun sub-tree)
+         )
+       )
+  tree)
+)
+
+
+(display "\nExercise 2.31 - deep-tree version of map")
+(define (square x) (* x x))
+(define (cube x) (* x x x))
+
+(display "\n(tree-map (list (list 1 2) 3 4) square):  ")
+(display (tree-map (list (list 1 2) 3 4) square))
+
+(display "\n(tree-map (list (list 1 2) (list (list 3 5 6 7)) 8) square):  ")
+(display (tree-map (list (list 1 2) (list (list 3 5 6 7)) 8) square))
+
+(display "\n(tree-map (list (list (list 1 2) (list (list 3 5 6 7)))) cube):  ")
+(display (tree-map (list (list (list 1 2) (list (list 3 5 6 7)))) cube))
+(newline)(newline)
