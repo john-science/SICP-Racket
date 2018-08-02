@@ -9,9 +9,7 @@ This chapter felt very much like an introduction to programming. Lots of philoso
 
 ### [Chapter 2 - Chapter_2_Abstractions_with_Data](Chapter_2_Abstractions_with_Data)
 
-This is a LISP, I am hoping to see lists.
-
-> TODO
+More waxing philosophic here about the nature of data vs code. Very enjoyable. A wonderful introduction to data-driven software. Not just a good description of lists and trees, but also the kinds of decisions that need to be made when trying to design code to solve a more general problem. A great introduction to thinking like an engineer. Hell, they even introduced compression algorithms.
 
 ### Chapter 3
 
