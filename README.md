@@ -15,6 +15,8 @@ More waxing philosophic about the nature of data vs code. Very enjoyable. A wond
 
 > TODO: I expect a combination approach to states and stateful programming (most programming, really), but also an introduction to objects and modular program design.
 
+So far, there has been a nice introduction to stateful programming (mutable variables and touching on OOP), but it has been from this seriously biased position where clearly the authors prefer functional programming.  Stil, there is a lot of good information in there.
+
 ### Chapter 4
 
 > TODO: I am expecting to write my own LISP. Which [I did once in Python](https://github.com/theJollySin/slowloris), but this should be more thorough and fun!
