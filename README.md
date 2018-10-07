@@ -5,23 +5,25 @@ Reading through the wonderful [SICP Textbook](https://mitpress.mit.edu/sites/def
 
 ### [Chapter 1 - Building Abstractions with Procedures](Chapter_1_Abstractions_with_Procedures)
 
-This chapter felt very much like an introduction to programming. Lots of philosophical discussions of the differences between data and logic - things of that sort. But there is also a nice introduction to Scheme here. And it was all a joy to read (most textbooks aren't this readable).
+Truly an introduction to programming. There are broad, philosophical discussions of the differences between data and logic. This chapter is a joy to read, discussing what a program *is* at the most basic levels. While I enjoyed it greatly, the high-minded philosophical talk about programming is completely divorced from the actual machinary of computers themselves. And thus begins the major bias in the rest of this (wonderful) book. The Scheme language is introduced.
+
 
 ### [Chapter 2 - Chapter_2_Abstractions_with_Data](Chapter_2_Abstractions_with_Data)
 
-More waxing philosophic about the nature of data vs code. Very enjoyable. A wonderful introduction to data-driven software. Not just a good description of lists and trees, but also the kinds of decisions that need to be made when trying to design code to solve a more general problem. A great introduction to thinking like an engineer. Hell, it even introduced compression algorithms.
+More waxing philosophic about the nature of data vs code. Very entertaining. A wonderful introduction to data-driven software. Not just a good description of lists and trees, but also the kinds of decisions that need to be made when trying to design code to solve a more general problem. A great introduction to thinking like an engineer. Hell, it even introduces compression algorithms.
+
 
 ### Chapter 3
 
-> TODO: I expect a combination approach to states and stateful programming (most programming, really), but also an introduction to objects and modular program design.
+The Scheme programs get more complex here and programming paradigms are introduced. Modular program design is introduced. List as streams and queues are introduced. And much of the chapter is devoted to discussing stateful programming, which is a no-no in Scheme/LISP. Unlike the first couple chapters, this chapter dragged on and I got bored fast. Whereas the book had been a wonderful introduction to programming concepts, it is now an opinionated soap box lecture about why mutable states are bad. And, in the end, I was unconvinced. It sounds like mutable states are bad because they are more complex for academic researchers who want to pretend that RAM and harddrives don't exist and we can ignore annoying complexities like databases and networking.
 
-So far, there has been a nice introduction to stateful programming (mutable variables and touching on OOP), but it has been from this seriously biased position where clearly the authors prefer functional programming.  Stil, there is a lot of good information in there.
-
-There is also a high-level discussion of scope, which seems too long to me. But it is an important topic if you've never seen it before.
 
 ### Chapter 4
 
-> TODO: I am expecting to write my own LISP. Which [I did once in Python](https://github.com/theJollySin/slowloris), but this should be more thorough and fun!
+This chapter starts out *hard* and fast on the idea that we should write our own (albeit simple) LISP interpreter. While I love the idea for an introdutory textbook, and enjoyed it greatly, this chapter endeavors to cover so much material it is a bit less readable than previous chapters.
+
+> Fun Fact: I have written my own LISP [once before](https://github.com/theJollySin/slowloris).
+
 
 ### Chapter 5
 
