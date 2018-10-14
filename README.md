@@ -20,7 +20,7 @@ The Scheme programs get more complex here and programming paradigms are introduc
 
 ### [Chapter 4 - Metalinguistic Abstraction](Chapter_4_Metalinguistic_Abstraction)
 
-This chapter starts out *hard* and fast on the idea that we should write our own (albeit simple) LISP interpreter. While I love the idea for an introdutory textbook, and enjoyed it greatly, this chapter endeavors to cover so much material it is a bit less readable than previous chapters.
+This chapter starts out *hard* and fast on the idea that we should write our own (albeit simple) LISP interpreter. While I love the idea for an introdutory textbook, and enjoyed it greatly, this chapter endeavors to cover so much material it is a bit less readable than previous chapters. I think this chapter also serves as one of the most important lessons for someone new to software: not just solving little test problems, but building non-trivially large software projects with many moving pieces.
 
 > Fun Fact: I have written my own LISP [once before](https://github.com/theJollySin/slowloris).
 
